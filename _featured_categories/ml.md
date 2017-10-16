@@ -1,10 +1,10 @@
 ---
 layout: list
-title: Language
-slug: language
+title: Machine Learning
+slug: ml
 menu: true
 submenu: true
 order: 1
 description: >
-  How to do with C/C++, Python, Java
+  How to do with Machine Learning
 ---
