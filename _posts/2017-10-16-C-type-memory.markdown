@@ -1,4 +1,4 @@
---
+---
 layout: post
 title:  " C 언어 변수 타입과 메모리 할당"
 subtitle:   " C 언어변수 타입과 메모리"
@@ -6,6 +6,7 @@ categories: language
 tags: c
 comments: true
 ---
+
 
 ## C 언어 변수 Type 과 메모리 할당 ##
 
