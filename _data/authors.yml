@@ -8,7 +8,8 @@ isme2n:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    해서 후회를 하면 반성하고 앞을 보지만, 안 해서 후회하면 미련이 남아 뒤를 본다.
+    해서 후회를 하면 반성하고 앞을 보지만, 
+    안 해서 후회하면 미련이 남아 뒤를 본다.
 
   # This photo will be used in the about section
   picture:
