@@ -1,4 +1,5 @@
 {% assign post = include.post %}
+
 <article id="post-{{ post.id | slice: 1,9999 }}" class="post{% if include.link_title %} mb6{% endif %}" role="article">
   <header>
     <h1 class="post-title">
@@ -33,15 +34,10 @@
 .myAd1190 { display:block; width:98%; height: 280px; }
 @media(min-width: 600px) { .myAd1190 { display: none; } }
 </style>
-
-
 <ins class="adsbygoogle myAd1190"
     data-ad-client="ca-pub-9134477021095729"
     data-ad-slot="6559875097"
     ></ins>
-
-
-
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -49,6 +45,7 @@
       {{ post.content }}
       <br/>
       <br/>
+      <!-- 블로그-하단-반응형 -->
       <ins class="adsbygoogle"
           style="display:block; width:100%; height:300px;"
           data-ad-client="ca-pub-9134477021095729"
@@ -65,7 +62,6 @@
     {{ post.excerpt }}
     <p class="read-more"><a class="heading" href="{{ post.url | relative_url }}" data-flip="title">Continue reading </a></p>
   {% endunless %}
-
 
 </article>
 {% unless include.link_title %}
@@ -87,5 +83,4 @@
     </div>
   </div>
   <br/>
-
 {% endunless %}
