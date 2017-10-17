@@ -292,14 +292,14 @@ Unordered LIST는 &#60;/li&#62;를, Definition LIST는 &#60;/dt&#62;와 &#60;/dd
 >
 >target : 연결된 웹 페이지의 Window name
 
->텍스트에 하이퍼링크 걸기
+>A. 텍스트에 하이퍼링크 걸기
 
 ```html
 <a href="http://www.naver.com">네이버</a>
 <a href="http://www.daum.net/login.html">다음 로그인</a>
 ```
 
->이미지에 하이퍼링크 걸기
+>B. 이미지에 하이퍼링크 걸기
 
 ```html
 <a href="http://www.naver.com">
@@ -307,7 +307,7 @@ Unordered LIST는 &#60;/li&#62;를, Definition LIST는 &#60;/dt&#62;와 &#60;/dd
 </a>
 ```
 
->파일 다운로드 링크
+>C. 파일 다운로드 링크
 
 Download 속성은 이미지, PDF, MP3, HTML, HWP, PPT 등 모든 파일을 다운로드 할 수 있는 링크를 만든다.
 
@@ -377,7 +377,9 @@ ActiveX가 대표적이다.
 >
 >&#60;audio&#62;, &#60;video&#62; 를 사용하여 재생할 수 있다.
 >
->그러나, Flash animation 같은 아직 표준화되지 않은 미디어를 재생하기 위해서는 &#60;embed&#62;, &#60;object&#62;가 필요하다.
+>그러나, Flash animation 같은 아직 표준화되지 않은 미디어를 재생하기 위해서는 
+>
+>&#60;embed&#62;, &#60;object&#62;가 필요하다.
 
 
 ## 비디오 & 오디오 넣기
