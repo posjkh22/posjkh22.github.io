@@ -99,7 +99,7 @@ Nine Bridges</span> on Oct. 16, 2017
 </script>
 </head>
 <body>
-<h2 onmouseouver="show()" onmouseout="hide()">PAG tour in Korea</h2>
+<h2 onmouseover="show()" onmouseout="hide()">PAG tour in Korea</h2>
 <hr>
 <div><img id="fig" src=""></div>
 <span>Adam Scott</span>, ranked first in the PGA, poses holding a dolharubang, 
