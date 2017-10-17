@@ -62,7 +62,7 @@ Nine Bridges</span> on Oct. 16, 2017
 	body { background-color : linen; color : green; 
 		margin-left : 40px; margin-right : 40px; }
 	h2 { text-align : center; color : darkred; }
-	hr { height : 50px; border : solid grey; background-color : grey; }
+	hr { height : 10px; border : solid grey; background-color : grey; }
 	span { color : blue; font-size : 20px; }
 </style>
 </head>
@@ -86,7 +86,7 @@ Nine Bridges</span> on Oct. 16, 2017
 	body { background-color : linen; color : green; 
 		margin-left : 40px; margin-right : 40px; }
 	h2 { text-align : center; color : darkred; }
-	hr { height : 50px; border : solid grey; background-color : grey }
+	hr { height : 10px; border : solid grey; background-color : grey }
 	span { color : blue; font-size : 20px; }
 </style>
 <script>
