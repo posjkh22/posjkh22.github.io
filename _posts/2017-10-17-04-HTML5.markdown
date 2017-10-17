@@ -117,7 +117,45 @@ HTML5는 각 태그에 의미와 구조적 특성을 부여하여, 웹 문서를
 ```html
 <body>
 <h3>DETAILS & SUMMARY TAG</h3>
-TEST & ANSWER
+PROBLEMS & SOLUTIONS
+<hr>
+<details>
+	<summary>PROBLEMS FOR TESTING</summary>
+	<p> Software Testing Problems: 1-5</P>
+</details>
+
+<details>
+	<summary>SOLUTIONS FOR PROBLEM</summary>
+	<p> Solution for Software Testing: 1-5</p>
+</details>
+</body>
+```
+
+## SEMANTIC INLINE TAG
+
+SEMANTIC INLINE TAG는 기능적인면도 조금은 있지만, 일반적으로 그 목적은 텍스트 내용에 SEMANTIC TAG를 부여하기 위함이다.
+즉, 어떠한 기능을 하지 않더라도 단순이 이 정보가 어떤 의미를 가지고 있는지를 표시하기 위해서 사용된다는 것이다.
+
+>
+>mark: 중요 텍스트 강조
+>
+>time: 시간 정보임을 표시
+>
+>meter: 퍼센트 데이터량을 표시
+>
+>progress: 작업의 진행정도를 표시
+
+
+```html
+<body>
+<h3>SEMANTIC INLINE TAG</h3>
+<hr>
+<p>
+	<mark>YUNA KIM WIN<mark> A GOLD MEDAL!<br>
+	<time>February, 2010</time>She finally win a gold medal.<br>
+	She got scores <meter value="0.97">97%</meter><br>
+</p>
+</body>
 
 ```
 
