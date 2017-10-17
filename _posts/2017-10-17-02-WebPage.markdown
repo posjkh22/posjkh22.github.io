@@ -53,7 +53,7 @@ Nine Bridges</span> on Oct. 16, 2017
 </html>
 ```
 
-<a href=https://posjkh22.github.io/samples/html/html-01.htm1>html-01</a>
+<a href=https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-01.htm1>html-01</a>
 
 
 ```html
