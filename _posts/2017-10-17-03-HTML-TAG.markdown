@@ -9,11 +9,18 @@ comments: true
 
 ## HTML TAG
 
-HTML 문서의 태그는 
+HTML 문서는 태그(tag) 기반으로 작성되는 언어이다.
+좀 다르게 표현하면, HTML 문서의 문서기술 또는 동작(반응)이 태그를 통해서 이루어진다.
 
->html, head, title, h1, img, figure, object, footer div 등 100여 개가 있다.
+>&#60;html&#62;, &#60;head&#62;, &#60;title&#62;, &#60;h1&#62;, &#60;img&#62;, &#60;figure&#62;, &#60;object&#62;, &#60;footer&#62;, &#60;div&#62;
 
 ## Tag 구성
+
+HTML의 tag는 요소(element)와 속성(attribute)로 이루어져 있다.
+요소(element)는 해당 태그의 identity로서 해당 태그가 어떤 역할을 하는지 결정하고,
+속성(attribute)는 해당 태그에 대한 부차적인 기능 또는 말 그대로 속성을 부여한다.
+본 포스팅에서는 주로 tag의 요소 즉, 각 tag가 가진 기능들을 다룰 예정이다.
+
 ```html
 <img src="start.jpg" width="10" hegiht="10" alt="rising start">
 ```
