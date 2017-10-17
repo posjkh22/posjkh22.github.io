@@ -39,7 +39,7 @@ HTML5는 각 태그에 의미와 구조적 특성을 부여하여, 웹 문서를
 
 본문과 관련이 적은 팁, 기사, 삽입 어구등을 담는다.
 
-##&#60;footer&#62;
+## &#60;footer&#62;
 
 저자나 저작권 정보와 같은 꼬리말을 담는다.
 
@@ -159,12 +159,221 @@ SEMANTIC INLINE TAG는 기능적인면도 조금은 있지만, 일반적으로 �
 
 ```
 
+## WEB FORM
+
+웹 페이지를 통해 사용자의 입력을 받는 형태를 웹 폼(Webform)이라 한다.
+웹 폼을 구성하는 태그들을 특별히, Form element라고 부르며, &#60;input&#62;, &#60;textarea&#62;, &#60;select&#62;가 이에 해당한다.
+
+```html
+<form action="WEB SERVER APPLICATION URL"
+      enctype="data encoding type"
+      method="get/post: transmition method"	
+      name="form name"
+      target="window name"
+</form>
+```
+
+```html
+<body>
+<h3>LOG IN WEB FORM</h3>
+<hr>
+<form name="login" method="get">
+USER ID: <input type="text" size="10" value=""><br>
+PASSWORD: <input type="password" size="10" value=""><input type="sumbit" value="log in">
+</form>
+</body>
+```
+
+## 텍스트 입력
+
+```html
+<body>
+<h3>TEXT FORM</h3>
+<hr>
+<form>
+	name: <imput type="text" value=""><br>
+	password: <input type="password" value="" maxlength="10"><br>
+	text: <textarea cols="20" rows="5">
+		input your text
+	      </textarea>
+</form>
+</body>
+```
 
 
-&#60;&#62;
-&#60;&#62;
-&#60;&#62;
-&#60;&#62;
-&#60;&#62;
-&#60;&#62;
+## 데이터 리스트
 
+```html
+<body>
+<h3>Which country do you like to go?</h3>
+<hr>
+<form>
+country: <input type="text" list="countries"><br>
+	<datalist id="countries">
+		<option value="Korea">
+		<option value="USA">
+		<option value="Japan">
+	</datalist>
+food: <input type="text" list="foods"><br>
+	<datalist id="foods">
+		<option value="cake">
+		<option value="pizza">
+		<option value="chicken">	
+	</datalist>	
+</form>
+</body>
+```
+
+## BUTTON
+
+>button: 기능이 구현되지 않은 버튼이다. Javascript를 통해 기능을 구현할 수 있다.
+>
+>submit: 클릭하면 브라우저가 FORM DATA를 WEB SERVER로 전송한다.(Default)
+>
+>reset: FORM에 입력된 DATA를 모두 초기화 하는 버튼이다.
+>
+>image: 이미지를 통해 구현된 버튼이로, 기능이 구현되어 있지 않고 Javascript를 통해 구현된다.
+>
+
+```html
+<input type="button" value="log in">
+<input type="submit" value="transmit">
+<input type="reset" value="reset">
+<input type="image" src="button.png" alt="image button">
+```
+
+## CHECK BOX
+
+>선택하는 수나 종류에 관계 없이 대상을 선택하는 방식
+>
+>value: 선택되어 전송되는 FORM DATA
+>
+>checked: 초기 선택상태
+>
+
+```html
+<body>
+<h3>CHECK LSITS</h3>
+<hr>
+<form>
+	PIZZA <input type="checkbox" value="1">
+	CHICKEN <input type="checkbox" value="2" checked>
+	SALAD <input type="checkbox" value="3">
+</form>
+</body>
+```
+
+## RADIO BUTTON
+
+>RADIO BUTTON은 같은 종류의 items 중 하나를 선택하는 방식.
+>
+>name 속성이 종류를 의미하고 이 속성이 동일하면, 그 중 하나만 선택 받을 수 있다.
+
+```html
+<body>
+<h3>RADIO BUTTONS</h3>
+<hr>
+<form>
+	PIZZA <input type="radio" name="foods" value="1">
+	CHICKEN <input type="radio" name="foods" value="2" checked>
+	SALAD <input type="radio" name="foods" value="3">
+</form>
+</body>
+```
+
+## COMBO BOX
+
+>DROPDOWN LIST 중 하나를 선택하는 방식
+
+```html
+<body>
+<h3>COMBO BOX</h3>
+<hr>
+<form>
+	<select name="foods">
+		<option value="1">PIZZA</option>
+		<option value="2" seleted>CHICKEN</option>
+		<option value="3">SALAD</option>
+	</select>
+</form>
+</body>
+```
+
+## FORM Element Labeling
+
+>&#60;label&#62;을 이용하여 FORM을 레이블링 한다.
+
+```html
+<body>
+<h3>LOG IN</h3>
+<hr>
+<form name="fo" method="get">
+	<label> USER ID: <input type="text" size="20" value=""></label><br>
+	<label for="pass"> PASSWORD: </label><input id="pass" type="password" size="20" value="">
+	<input type="submit" value="log in">
+</form>
+</body>
+```
+
+## 컬러 다이얼로그 사용하기
+
+```html
+<body>
+<h3>COLOR DIALOG</h3>
+<hr>
+<form>
+	Select color: <input type="color" value=#00BFFF"
+		onchange="document.body.style.color=this.value">
+</form>
+</body>
+```
+
+## 시간 입력하기
+
+```html
+<body>
+<h3>TIME</h3>
+<hr>
+<form>
+<pre>
+month: <input type="month" value="2017-10"><br>
+week: <input type="week" value="20170-W39"><br>
+data: <input type="data" value="2017-10-17"><br>
+time: <input type="time" value="10:15"><br>
+local: <input type="datetime-local" value="2017-10-1T10:15.10"><br>
+</pre>
+</form>
+</body>
+```
+
+## 형식 데이터 입력하기
+
+```html
+<body>
+<h3>FORMAT DATA</h3>
+<hr>
+<form>
+	email: <input type="email" placeholder="id@host"><br>
+	homepage: <input type="url" placeholder="http://"><br>
+	phone: <input type="tel" placeholder="010-1234-5678">
+</form>
+</body>
+```
+
+## 형식 요소 묶기
+
+```html
+<body>
+<h3>INFORMATION</h3>
+<hr>
+<form>
+	<fieldset>
+		<legend>INFO</legend>
+		id: <input type="id"><br>
+		email: <input type="email"><br>
+		phone: <input type="tel"><br>
+	</fieldset>
+</form>
+</body>
+
+```
