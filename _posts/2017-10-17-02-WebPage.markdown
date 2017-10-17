@@ -12,7 +12,9 @@ comments: true
 웹페이지는 다음 3요소가 결합되어 생성된다.
 
 >HTML(웹 페이지의 구조와 내용)
+
 >CSS(웹 페이지의 모양)
+
 >Javascript(웹 페이지의 행동 및 응용프로그램)
 
 ## HTML
@@ -43,8 +45,10 @@ CSS와 Javascript는 HTML 내에서 &#60;style&#62; tag와 &#60;script&#62; tag�
 <body>
 <h2>PAG tour in Korea</h2>
 <hr>
-<span>Adam Scott</span>, ranked first in the PGA, poses holding a dolharubang, a folk guardian of South Koreas southernmost resort island of Jeju, 
-in this photo released by the organizing committee for <span>South Koreas first PGA tour CJ Cup Nine Bridges</span> on Oct. 16, 2017
+<span>Adam Scott</span>, ranked first in the PGA, poses holding a dolharubang, 
+a folk guardian of South Koreas southernmost resort island of Jeju, in this photo 
+released by the organizing committee for <span>South Koreas first PGA tour CJ Cup 
+Nine Bridges</span> on Oct. 16, 2017
 </body>
 </html>
 ```
@@ -65,8 +69,10 @@ in this photo released by the organizing committee for <span>South Koreas first 
 <body>
 <h2>PAG tour in Korea</h2>
 <hr>
-<span>Adam Scott</span>, ranked first in the PGA, poses holding a dolharubang, a folk guardian of South Koreas southernmost resort island of Jeju, 
-in this photo released by the organizing committee for <span>South Koreas first PGA tour CJ Cup Nine Bridges</span> on Oct. 16, 2017
+<span>Adam Scott</span>, ranked first in the PGA, poses holding a dolharubang, 
+a folk guardian of South Koreas southernmost resort island of Jeju, in this photo 
+released by the organizing committee for <span>South Koreas first PGA tour CJ Cup 
+Nine Bridges</span> on Oct. 16, 2017
 </body>
 </html>
 ```
@@ -96,8 +102,10 @@ in this photo released by the organizing committee for <span>South Koreas first 
 <h2 onmouseouver="show()" onmouseout="hide()">PAG tour in Korea</h2>
 <hr>
 <div><img id="fig" src=""></div>
-<span>Adam Scott</span>, ranked first in the PGA, poses holding a dolharubang, a folk guardian of South Koreas southernmost resort island of Jeju, 
-in this photo released by the organizing committee for <span>South Koreas first PGA tour CJ Cup Nine Bridges</span> on Oct. 16, 2017
+<span>Adam Scott</span>, ranked first in the PGA, poses holding a dolharubang, 
+a folk guardian of South Koreas southernmost resort island of Jeju, in this photo 
+released by the organizing committee for <span>South Koreas first PGA tour CJ Cup 
+Nine Bridges</span> on Oct. 16, 2017
 </body>
 </html>
 ```
