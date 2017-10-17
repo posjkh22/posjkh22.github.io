@@ -35,7 +35,7 @@ comments: true
 CSS와 Javascript는 HTML 내에서 <style> tag와 <script> tag이다.
 >즉, 달리말하면 CSS와 Javascript는 HTML이 포함하는 하나의 tag인 셈이다.
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,7 +50,7 @@ in this photo released by the organizing committee for <span>South Koreas first 
 </html>
 ```
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,7 +72,7 @@ in this photo released by the organizing committee for <span>South Koreas first 
 </html>
 ```
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
 <head>
