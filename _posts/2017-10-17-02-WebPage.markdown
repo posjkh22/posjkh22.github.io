@@ -38,9 +38,7 @@ CSS와 Javascript는 HTML 내에서 &#60;style&#62; tag와 &#60;script&#62; tag�
 >즉, 달리말하면 CSS와 Javascript는 HTML이 포함하는 하나의 tag인 셈이다.
 >
 
->&#60;title&#62;, &#60;head&#62;, &#60;body&#62;, &#60;hr&#62; 
->
->을 통해 문서의 전반적인 내용을 작성하고 
+>&#60;title&#62;, &#60;head&#62;, &#60;body&#62;, &#60;hr&#62;을 통해 문서의 전반적인 내용을 작성하고 
 
 ```html
 <!DOCTYPE html>
