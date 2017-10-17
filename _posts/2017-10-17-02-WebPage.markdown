@@ -53,11 +53,7 @@ Nine Bridges</span> on Oct. 16, 2017
 </html>
 ```
 
-![](https://posjkh22.github.io/samples/html/html-03.htm1)
-![](https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-01)
-<a href=https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-01.htm1>html-01</a>
-[link to html-01](samples/html/html-01.html)
-[link to html-02](https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-01.html)
+[&#91;LINK&#93;html-01](https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-01.html)
 
 
 ```html
@@ -84,7 +80,7 @@ Nine Bridges</span> on Oct. 16, 2017
 </html>
 ```
 
-<a href=https://posjkh22.github.io/samples/html/html-02.htm1>html-02</a>
+[&#91;LINK&#93;html-02](https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-02.html)
 
 ```html
 <!DOCTYPE html>
@@ -118,5 +114,5 @@ Nine Bridges</span> on Oct. 16, 2017
 </body>
 </html>
 ```
-<a href=https://posjkh22.github.io/samples/html/html-03.htm1>html-03</a>
+[&#91;LINK&#93;html-03](https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-03.html)
 
