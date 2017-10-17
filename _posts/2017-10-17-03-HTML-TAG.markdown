@@ -147,6 +147,211 @@ CSS 스타일 또는 Javascript 등을 적용시킬 수 있다.
 HTML 파일에서도 마찬가지로 이러한 메타 정보를 표현하기 위해 태그를 가지고 있는데 &#60;base&#62;, &#60;link&#62;, &#60;script&#62;
 &#60;title&#62;, &#60;meta&#62; 등이 이에 해당한다.
 
+## 웹 페이지 베이스
+
+&#60;base&#62;는 웹 페이지들이 담겨 있는 기본 URL과 웹 페이지가 출력될 Window를 지정하기 위해 사용된다. 
+해당 웹 페이지의 URL를 지정하고 싶다면 다음과 같이 나타낼 수 있다.
+
+>&#60;base&#62;는 &#60;head&#62; 내에 위치해야 하며 단 한번만 허용된다..
+
+```html
+<head>
+	<base href="http://posjkh22.github.io/lanuage/">
+</head>
+```
+
+```html
+<a href="c.html">c언어</a>
+<a href="python.html">파이썬</a>
+<a href="html.html">HTML</a>
+```
+
+## 메타데이터
+
+메타 데이터는 웹 페이지의 저작자, 문자 인코딩 방식, 문서 내용 등 메타 데이터를 사용하기 위해 사용된다.
+
+>메타 데이터는 name과 content 으로 구성된다.
+
+```html
+<meta name="author" content="posjkh">
+<meta name="about" content="Electronic Engineering">
+<meta name="keywords" content="c, python, java">
+<meta charset="UTF-8">
+```
+
+## 이미지 삽입
+
+HTML에서 이미지로 사용할 수 있는 이미지 확장자는 BMP, GIF, PNG, JPG(JPEG), animated-GIF 이다.
+이미지로 사용한다는 것은 src 속성으로 지정할 수 있다는 의미이다.
+
+>alt: 이미지가 출력되지 않는 경우에 출력되는 문자열
+
+```html
+<img src="star.jpg" alt="rising start", width="50px", height="20px">
+```
+
+## 리스트 만들기
+
+HTML에서는 리스트를 제공하는데, 이 때 리스트는 문자열 서식을 의미한다.
+특히, 정의 리스트(Definition LIST)는 정의 리스트 전체는 &#60;dl&#62;로
+각 아이템의 용어는 &#60;dt&#62;, 그에 대한 설명은 &#60;dd&#62; 로 표현한다.
+Unordered LIST는 &#60;/li&#62;를, Definition LIST는 &#60;/dt&#62;와 &#60;/dd&#62;
+를 생략할 수 있다.
+
+>Ordered List: &#60;ol&#62;
+>
+>Unordered List: &#60;ul&#62;
+>
+>Definition List: &#60;dl&#62;
+
+
+>Ordered LIST
+
+```html
+<body>
+<h3>Calendar</h3>
+<hr>
+<ol type="A" start="F">
+	<li>May</li>
+	<li>June</li>
+	<li>July</li>
+	<li>August</li>
+</ol>
+</body>
+```
+
+>Unordered LIST
+
+```html
+<body>
+<h3>Animal</h3>
+<hr>
+<ul>
+	<li>Rabbit
+	<li>Horse
+	<li>Lion
+</ul>
+</body>
+```
+
+>Definition LIST
+
+```html
+<body>
+<h3>Web browser</h3>
+<hr>
+<dl>
+	<dt><strong>Internet Explorer</strong>
+	<dd>Most commonly used in Windows OS
+	<dt><strong>Crome</strong>
+	<dd>Most commonly used in the world
+</dl>
+</body>
+```
+
+## 테이블
+
+이미지는 기본적으로 아래의 구조를 가진다.
+&#60;tbody&#62; 내에서 행으로 &#60;tr&#62;을 사용하고
+각 행에 대한 데이터 열로 &#60;td&#62;를 사용한다.
+
+
+```html
+<table>
+	<caption>TABLE NAME</caption>
+	<thead>LABELS</thead>
+	<tbody>CONTENTS</tbody>
+	<tfoot>RESULT FROM CONTENTS</tfoot>
+</table>
+```
+
+```html
+<body>
+<h3>IMAGE TABLE</h3>
+<hr>
+<table>
+	<caption>Favorite Fruits</caption>
+	<tbody>	
+		<tr>
+			<td><img src="fruits/apple.jpg"></td>
+			<td><img src="fruits/banana.jpg"></td>
+			<td><img src="fruits/lemon.jpg"></td>
+		</tr>		
+	</tbody>
+</table>
+</body>
+```
+
+## 하이퍼링크
+
+하이퍼링크로는 &#60;a&#62;가 사용되고 해당 속성에 따라 기능이 달라진다.
+
+>href : 링크가 가리키는 URL로 이동
+>
+>download : 링크가 클릭하면 지정된 파일이 다운로드
+>
+>target : 연결된 웹 페이지의 Window name
+
+>텍스트에 하이퍼링크 걸기
+
+```html
+<a href="http://www.naver.com">네이버</a>
+<a href="http://www.daum.net/login.html">다음 로그인</a>
+```
+
+>이미지에 하이퍼링크 걸기
+
+```html
+<a href="http://www.naver.com">
+	<img src="naver_logo.png" alt="naver homepage" width="20px" height="20px">
+</a>
+```
+
+>파일 다운로드 링크
+
+Download 속성은 이미지, PDF, MP3, HTML, HWP, PPT 등 모든 파일을 다운로드 할 수 있는 링크를 만든다.
+
+```html
+<a href="OREO.png" donwload>OREO image</a>
+<a href="OREO.html" donwload>OREO web page</a>
+```
+
+
+## 앵커 만들기
+
+문서 내에서 특정 지점으로 이동하고 싶은 경우 앵커(anchor)를 사용할 수 있다.
+앵커는 문서내의 특정 위치를 의미하는데, 이 위치는 해당 위치의 tag의 id를 이용하여 생성할 수 있다.
+
+>즉, 앵커를 각 tag의 id를 통해 생성할 수 있다.
+
+```html
+<body>
+<h3>Figure skating Legend</h3>
+<hr>
+<ul>
+	<li><a href="#about">About Yuna KIM</a>
+	<li><a href="#history">History of Yua KIM</a>
+</ul>
+
+<h3 id="about">About</h3>
+<p>Yuna Kim KTM (born September 5, 1990), also credited in eastern name order as Kim Yuna or Kim Yeon-ah, 
+is a South Korean former professional figure skater. She is the 2010 Olympic champion and 2014 silver 
+medalist in ladies' singles; the 2009, 2013 World champion.</p>
+ 
+<h3 id="history">History</h3>
+<p>Kim is the first South Korean figure skater to win a medal at an ISU Junior or Senior Grand Prix event, 
+ISU Championship, and the Olympic Games. She is the first female skater to win the Olympic Games, 
+the World Championships, the Four Continents Championships and the Grand Prix Final. She is one of the 
+most highly recognized athletes and media figures in South Korea.</p>
+</body>
+```
+
+
+
+
+
+
+
 &#60;&#62;
 &#60;&#62;
 &#60;&#62;
