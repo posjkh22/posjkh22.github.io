@@ -56,7 +56,8 @@ Nine Bridges</span> on Oct. 16, 2017
 ![](https://posjkh22.github.io/samples/html/html-03.htm1)
 ![](https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-01)
 <a href=https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-01.htm1>html-01</a>
-[link to html-01](samples/html/html-01);
+[link to html-01](samples/html/html-01.html)
+[link to html-01](https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-01)
 
 
 ```html
