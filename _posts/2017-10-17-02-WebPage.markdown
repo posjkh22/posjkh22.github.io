@@ -59,6 +59,7 @@ Nine Bridges</span> on Oct. 16, 2017
 
 [LINK:html-01](https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-01.html)
 <a href="https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-01.html" download>[LINK: html-01]</a>
+<a href="samples/html/html-01.html" download>[LINK: html-01]</a>
 
 
 >&#60;style&#62;을 통해 이미지를 꾸미고
