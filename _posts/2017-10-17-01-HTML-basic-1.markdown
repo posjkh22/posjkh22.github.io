@@ -7,6 +7,49 @@ tags: html
 comments: true
 ---
 
+본 포스팅은 http://webberstudy.com/html-css/html-1/basic-knowledge/ 를 참고하여 작성하였습니다.
+
 ## HTML 기초 문법
 
+HTML은 기본적으로 tag를 통해 작성되는 언어이다.
+
+tag 는 문법을 이루는 하나의 방법인데 구조적인 측면(형태)에서 살펴보면, 열리고 닫히는 태그와 스스로 닫히는 태그가 있다.
+
+열리고 닫히는 태그는 
+
+```html
+
+<tag>ABC</tag>
+
+```
+
+스스로 닫히는 태그는
+
+```html
+
+<img src="http://webberstudy.com/attach/html-1/sample.png" alt="sample_image"/>
+
+```
+
+태그의 형태를 위에서 살펴보았다면 이번에는 태그가 무엇으로 구성되어 있는지 살펴보자.
+
+태그는 요소(element)와 속성(attirbute)로 구성되어 있다.
+
+```html
+
+<요소 속성="속성값" />
+
+<요소 속성="속성값">요소내용</요소>
+
+```
+
+요소에는 앞서 살펴본 img 와 더블어 a(절대주소 URL link), link(상대주소 URL link) 등이 존재한다. 
+
+```html
+
+<a href="http://webberstudy.com">웨버스터디 홈으로 가기</a>
+
+<link href="abc.css" type="text/css" rel="stylesheet" />
+
+```
 
