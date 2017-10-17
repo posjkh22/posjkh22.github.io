@@ -17,22 +17,23 @@ comments: true
 
 >Javascript(웹 페이지의 행동 및 응용프로그램)
 
-# HTML
+## HTML
 웹 페이지의 전체적인 내용 및 구조를 가진다.
-<head>, <body>, <img>, <table> 등 HTML 태그를 이용하여 
+&#60;head&#62;, &#60;body&#62;, &#60;img&#62;, &#60;table&#62; 등 HTML 태그를 이용하여 
 제목, 본문, 장, 절, 문단, 이미지, 테이블 등을 지정한다.
 
-# CSS
+## CSS
 글자의 폰트 크기, 글자색, 배경색, 여백 등의 모양을 지정한다.
 
-# Javascript
+## Javascript
 마우스나 키보드 등 입력에 따라 웹 페이지가 동적으로 반응할 수 있도록 지정한다.
 
 
 ## Web Page 구조
 앞서 설명에서 HTML과 CSS, Javascript 를 서로 분리하여 설명하였지만,
 실제로는 HTML이 CSS와 Javascript 를 포함하고 있다.
-CSS와 Javascript는 HTML 내에서 <style> tag와 <script> tag이다.
+CSS와 Javascript는 HTML 내에서 &#60;style&#62; tag와 &#60;script&#62; tag이다.
+
 >즉, 달리말하면 CSS와 Javascript는 HTML이 포함하는 하나의 tag인 셈이다.
 
 ```html
