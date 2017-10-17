@@ -1,0 +1,102 @@
+---
+layout: post
+title:  "1. 웹 페이지의 구성"
+subtitle:   "웹 페이지는 어떻게 구성될까?"
+categories: language
+tags: html
+comments: true
+---
+
+## Web Page
+
+웹페이지는 다음 3요소가 결합되어 생성된다.
+
+>HTML(웹 페이지의 구조와 내용)
+>CSS(웹 페이지의 모양)
+>Javascript(웹 페이지의 행동 및 응용프로그램)
+
+# HTML
+웹 페이지의 전체적인 내용 및 구조를 가진다.
+<head>, <body>, <img>, <table> 등 HTML 태그를 이용하여 
+제목, 본문, 장, 절, 문단, 이미지, 테이블 등을 지정한다.
+
+# CSS
+글자의 폰트 크기, 글자색, 배경색, 여백 등의 모양을 지정한다.
+
+# Javascript
+마우스나 키보드 등 입력에 따라 웹 페이지가 동적으로 반응할 수 있도록 지정한다.
+
+
+## Web Page 구조
+앞서 설명에서 HTML과 CSS, Javascript 를 서로 분리하여 설명하였지만,
+실제로는 HTML이 CSS와 Javascript 를 포함하고 있다.
+CSS와 Javascript는 HTML 내에서 <style> tag와 <script> tag이다.
+>즉, 달리말하면 CSS와 Javascript는 HTML이 포함하는 하나의 tag인 셈이다.
+
+```HTML
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Page</title>
+</head>
+<body>
+<h2>PAG tour in Korea</h2>
+<hr>
+<span>Adam Scott</span>, ranked first in the PGA, poses holding a dolharubang, a folk guardian of South Koreas southernmost resort island of Jeju, 
+in this photo released by the organizing committee for <span>South Koreas first PGA tour CJ Cup Nine Bridges</span> on Oct. 16, 2017
+</body>
+</html>
+```
+
+```HTML
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Page</title>
+<style>
+	body { background-color : linen; color : green; 
+		margin-left : 40px; margin-right : 40px; }
+	h2 { text-align : center; color : darkred; }
+	hr { height : 50px; border : solid grey; background-color : grey }
+	span { color : blue; font-size : 20px; }
+</style>
+</head>
+<body>
+<h2>PAG tour in Korea</h2>
+<hr>
+<span>Adam Scott</span>, ranked first in the PGA, poses holding a dolharubang, a folk guardian of South Koreas southernmost resort island of Jeju, 
+in this photo released by the organizing committee for <span>South Koreas first PGA tour CJ Cup Nine Bridges</span> on Oct. 16, 2017
+</body>
+</html>
+```
+
+```HTML
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Page</title>
+<style>
+	body { background-color : linen; color : green; 
+		margin-left : 40px; margin-right : 40px; }
+	h2 { text-align : center; color : darkred; }
+	hr { height : 50px; border : solid grey; background-color : grey }
+	span { color : blue; font-size : 20px; }
+</style>
+<script>
+	function show(){
+		document.getElementById("fig").src="PAG.png";
+	}
+	function hide(){
+		document.getElementById("fig").src="";
+	}
+</head>
+<body>
+<h2 onmouseouver="show()" onmouseout="hide()">PAG tour in Korea</h2>
+<hr>
+<div><img id="fig" src=""></div>
+<span>Adam Scott</span>, ranked first in the PGA, poses holding a dolharubang, a folk guardian of South Koreas southernmost resort island of Jeju, 
+in this photo released by the organizing committee for <span>South Koreas first PGA tour CJ Cup Nine Bridges</span> on Oct. 16, 2017
+</body>
+</html>
+```
+
