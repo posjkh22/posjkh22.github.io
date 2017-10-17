@@ -14,7 +14,8 @@ HTML5는 각 태그에 의미와 구조적 특성을 부여하여, 웹 문서를
 >HTML5 IS A SEMANTIC WEB!
 >
 >SEMANTIC TAG: &#60;header&#62;, &#60;nav&#62;, &#60;section&#62;, &#60;article&#62;, &#60;aside&#62;, &#60;footer&#62; 
-
+>
+>SEMANTIC TAG가 담긴 문서의 모양과 실제 구조와는 별개이다.
 
 ## &#60;header&#62;
 
@@ -24,20 +25,106 @@ HTML5는 각 태그에 의미와 구조적 특성을 부여하여, 웹 문서를
 
 ## &#60;nav&#62;
 
-하이퍼링크들을 모아놓은 섹션이다.
+하이퍼링크들을 모아 놓는다.
 
 ## &#60;section&#62;
 
-본문에 해댕하는 섹션이다.
+본문에 해당한다.
 
 ## &#60;article&#62;
 
-본문과 관련된 보조적인 내용을 담는 섹션이다.
+본문과 관련된 보조적인 내용을 담는다.
 
 ## &#60;aside&#62;
 
+본문과 관련이 적은 팁, 기사, 삽입 어구등을 담는다.
+
+##&#60;footer&#62;
+
+저자나 저작권 정보와 같은 꼬리말을 담는다.
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>HTML5 SEMANTIC TAGS</title>
+</head>
+
+<body>
+	<header>header</header>
+	<nav>nav</nav>
+	<aside>aside</aside>
+	<section>section</section>
+	<footer>footer</footer>
+</body>
+</html>
+```
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>HTML5 SEMANTIC TAGS</title>
+<style>
+	html, body { margine: 0; padding: 0; height:100%; }
+	.header ( width: 100%; height: 15%; background: red; }
+	.nav ( width: 15%; height: 70%; float: left background: yellow; }
+	.section ( width: 70%; height: 70%; float: left; background: green; }
+	.aside ( width: 15%; height: 70%; float: left; background: blue; }
+	.footer ( width: 100%; height: 15%; clear: both; background: plum; }
+
+</style>
+</head>
+
+<body>
+	<header class="header">header</header>
+	<nav class="nav">nav</nav>
+	<aside class="aside">aside</aside>
+	<section class="section">section</section>
+	<footer class="footer">footer</footer>
+</body>
+</html>
+```
+
+## SEMANTIC BLOCK TAG
+
+> figure: 그림과 관련된 내용을 블럭화 하는 태그
+>
+> details & summary: 상세정보를 감추거나 보이게 하는 태그
+
+>A. &#60;figure&#62;
+
+```htmll
+<body>
+<h3>FIGURE TAG</h3>
+<hr>
+<figure id="rising_start">
+	<figcaption>Who is the best rising star?</figcaption>
+	<pre> Vote for your best star! 
+	</pre>
+	<hr>
+	<pre>
+		<img src="who_is_the_best_star.png">
+	</pre>		
+</figure>
+</body>
+```
+
+>B. &#60;detail&#62; & &#60;summary&#62;
+
+```html
+<body>
+<h3>DETAILS & SUMMARY TAG</h3>
+TEST & ANSWER
+
+```
 
 
+
+&#60;&#62;
+&#60;&#62;
 &#60;&#62;
 &#60;&#62;
 &#60;&#62;
