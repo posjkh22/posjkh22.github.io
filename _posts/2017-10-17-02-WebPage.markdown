@@ -38,8 +38,9 @@ CSS와 Javascript는 HTML 내에서 &#60;style&#62; tag와 &#60;script&#62; tag�
 >즉, 달리말하면 CSS와 Javascript는 HTML이 포함하는 하나의 tag인 셈이다.
 >
 
-0. &#60;title&#62;, &#60;head&#62;, &#60;body&#62;, &#60;hr&#62; 
-을 통해 문서의 전반적인 내용을 작성하고 
+>&#60;title&#62;, &#60;head&#62;, &#60;body&#62;, &#60;hr&#62; 
+>
+>을 통해 문서의 전반적인 내용을 작성하고 
 
 ```html
 <!DOCTYPE html>
@@ -61,7 +62,7 @@ Nine Bridges</span> on Oct. 16, 2017
 [LINK:html-01](https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-01.html)
 
 
-1. &#60;style&#62;을 통해 이미지를 꾸미고
+>&#60;style&#62;을 통해 이미지를 꾸미고
 
 ```html
 <!DOCTYPE html>
@@ -89,7 +90,7 @@ Nine Bridges</span> on Oct. 16, 2017
 
 [LINK:html-02](https://github.com/posjkh22/posjkh22.github.io/tree/master/samples/html/html-02.html)
 
-2. &#60;script&#62;를 통해 액션을 부여한다.
+>&#60;script&#62;를 통해 액션을 부여한다.
 
 ```html
 <!DOCTYPE html>
