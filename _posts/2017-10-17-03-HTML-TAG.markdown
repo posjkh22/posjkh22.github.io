@@ -346,17 +346,67 @@ most highly recognized athletes and media figures in South Korea.</p>
 </body>
 ```
 
+## 인라인 프레임
+
+>아마존, 네이버 등 대부분의 포털 사이트들은 &#60;iframe&#62; 태그로는 연결할 수 없다.
+>
+>Clickjacking 방식의 웹 침입을 막기 위해 inline frame 출력을 거부하기 때문이다.
+>
+>iframe 태그는 &#60;body&#62; 내에서만 사용된다.
+>
+>인라인 프레임 안에 또 다른 인라인 프레임을 만들 수 있다.
 
 
+```html
+<title>Web Page with iframe</title>
+<body>
+<h3>Two iframes example</h3>
+<hr>
+<iframe src="iframe1.html" witdh=300" height="200"></iframe>
+<iframe src="iframe2.html" witdh=300" height="200"></iframe>
+</body>
+```
+
+## HTML5와 플러그인
+
+HTML5 이전까지는 오디어나 비디오를 재생하기 위해 브라우저에 플러그인(plug-in)을 사용해야 했다.
+플러그인이란 브라우저가 처리할 수 없는 비표준 형식의 데이터를 전용으로 처리해주는 내장형 소프트웨어로
+ActiveX가 대표적이다. 
+
+>HTML5 부터는 plug-in 없이 미디어를 재생시킬 수 있다. 
+>
+>&#60;audio&#62;, &#60;video&#62; 를 사용하여 재생할 수 있다.
+>
+>그러나, Flash animation 같은 아직 표준화되지 않은 미디어를 재생하기 위해서는 &#60;embed&#62;, &#60;object&#62;가 필요하다.
 
 
+## 비디오 & 오디오 넣기
 
+>contols : 미디어 제어 버튼
+>
+>autoplay : 미디어 자동 재생
+>
+>src : 미디어 이름
+>
+>type : 미디어 형식
+>
+>muted : 오디오 뮤트
+>
+>loop : 반복재생
 
-&#60;&#62;
-&#60;&#62;
-&#60;&#62;
-&#60;&#62;
-&#60;&#62;
-&#60;&#62;
-&#60;&#62;
+```html
+<video width="500" height="400" controls autoplay>
+	<source src="MyLove.mp4" type="video/mp4">
+	브라우저가 video 태그를 지원하지 않습니다.
+</video>
+```
+
+```html
+<audio controls autoplay>
+	<source src="MyLove.mp3" type="audio/mpeg">
+	<source src="YouLikeIt.mp3" type="audio/ogg">
+	브라우저가 audio 태그를 지원하지 않습니다.
+</audio>
+```
+
 
