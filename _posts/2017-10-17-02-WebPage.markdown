@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "1. 웹 페이지의 구성"
+title:  "Web Page?"
 subtitle:   "웹 페이지는 어떻게 구성될까?"
 categories: language
 tags: html
@@ -53,6 +53,9 @@ Nine Bridges</span> on Oct. 16, 2017
 </html>
 ```
 
+![](https://posjkh22.github.io/samples/html/html-01.htm1)
+
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -76,6 +79,7 @@ Nine Bridges</span> on Oct. 16, 2017
 </body>
 </html>
 ```
+![](https://posjkh22.github.io/samples/html/html-02.htm1)
 
 ```html
 <!DOCTYPE html>
@@ -109,4 +113,5 @@ Nine Bridges</span> on Oct. 16, 2017
 </body>
 </html>
 ```
+![](https://posjkh22.github.io/samples/html/html-03.htm1)
 
