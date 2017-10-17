@@ -43,7 +43,7 @@ CSS와 Javascript는 HTML 내에서 &#60;style&#62; tag와 &#60;script&#62; tag�
 <title>Web Page</title>
 </head>
 <body>
-<h2>PAG tour in Korea</h2>
+<h2>PGA tour in Korea</h2>
 <hr>
 <span>Adam Scott</span>, ranked first in the PGA, poses holding a dolharubang, 
 a folk guardian of South Koreas southernmost resort island of Jeju, in this photo 
@@ -63,11 +63,11 @@ Nine Bridges</span> on Oct. 16, 2017
 		margin-left : 40px; margin-right : 40px; }
 	h2 { text-align : center; color : darkred; }
 	hr { height : 10px; border : solid grey; background-color : grey; }
-	span { color : blue; font-size : 20px; }
+	span { color : black; font-size : 20px; }
 </style>
 </head>
 <body>
-<h2>PAG tour in Korea</h2>
+<h2>PGA tour in Korea</h2>
 <hr>
 <span>Adam Scott</span>, ranked first in the PGA, poses holding a dolharubang, 
 a folk guardian of South Koreas southernmost resort island of Jeju, in this photo 
@@ -87,11 +87,11 @@ Nine Bridges</span> on Oct. 16, 2017
 		margin-left : 40px; margin-right : 40px; }
 	h2 { text-align : center; color : darkred; }
 	hr { height : 10px; border : solid grey; background-color : grey }
-	span { color : blue; font-size : 20px; }
+	span { color : black; font-size : 20px; }
 </style>
 <script>
 	function show(){
-		document.getElementById("fig").src="PAG.png";
+		document.getElementById("fig").src="PGA.png";
 	}
 	function hide(){
 		document.getElementById("fig").src="";
@@ -99,7 +99,7 @@ Nine Bridges</span> on Oct. 16, 2017
 </script>
 </head>
 <body>
-<h2 onmouseover="show()" onmouseout="hide()">PAG tour in Korea</h2>
+<h2 onmouseover="show()" onmouseout="hide()">PGA tour in Korea</h2>
 <hr>
 <div><img id="fig" src=""></div>
 <span>Adam Scott</span>, ranked first in the PGA, poses holding a dolharubang, 
