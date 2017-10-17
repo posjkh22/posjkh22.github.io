@@ -1,0 +1,45 @@
+---
+layout: post
+title: "HTML5"
+subtitle: "HTML5는 무엇이 다른가?"
+categories: language
+tags: html
+comments: true
+---
+
+## HTML5
+
+HTML5는 각 태그에 의미와 구조적 특성을 부여하여, 웹 문서를 구조화시켰다.
+
+>HTML5 IS A SEMANTIC WEB!
+>
+>SEMANTIC TAG: &#60;header&#62;, &#60;nav&#62;, &#60;section&#62;, &#60;article&#62;, &#60;aside&#62;, &#60;footer&#62; 
+
+
+## &#60;header&#62;
+
+페이지나 섹션의 머리말으로 페이지 제목, 페이지 소개 설명이 기재된다.
+구조적으로 전체 페이지의 헤더 역할뿐 아니라, &#60;section&#62;, &#60;article&#62;의 헤더 역할을 한다.
+
+
+## &#60;nav&#62;
+
+하이퍼링크들을 모아놓은 섹션이다.
+
+## &#60;section&#62;
+
+본문에 해댕하는 섹션이다.
+
+## &#60;article&#62;
+
+본문과 관련된 보조적인 내용을 담는 섹션이다.
+
+## &#60;aside&#62;
+
+
+
+&#60;&#62;
+&#60;&#62;
+&#60;&#62;
+&#60;&#62;
+
