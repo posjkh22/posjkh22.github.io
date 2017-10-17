@@ -12,7 +12,9 @@ comments: true
 웹페이지는 다음 3요소가 결합되어 생성된다.
 
 >HTML(웹 페이지의 구조와 내용)
+
 >CSS(웹 페이지의 모양)
+
 >Javascript(웹 페이지의 행동 및 응용프로그램)
 
 # HTML
@@ -57,7 +59,7 @@ in this photo released by the organizing committee for <span>South Koreas first 
 	body { background-color : linen; color : green; 
 		margin-left : 40px; margin-right : 40px; }
 	h2 { text-align : center; color : darkred; }
-	hr { height : 50px; border : solid grey; background-color : grey }
+	hr { height : 50px; border : solid grey; background-color : grey; }
 	span { color : blue; font-size : 20px; }
 </style>
 </head>
@@ -89,6 +91,7 @@ in this photo released by the organizing committee for <span>South Koreas first 
 	function hide(){
 		document.getElementById("fig").src="";
 	}
+</script>
 </head>
 <body>
 <h2 onmouseouver="show()" onmouseout="hide()">PAG tour in Korea</h2>
