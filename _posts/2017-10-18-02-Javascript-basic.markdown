@@ -92,6 +92,10 @@ function out(obj){
 <head>
 <title>alert</title>
 <style>
+h3 {
+	text-align: center;
+}
+
 a {
 	text-align: center;
 }
