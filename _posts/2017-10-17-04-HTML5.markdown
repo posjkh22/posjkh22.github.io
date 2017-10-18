@@ -11,11 +11,11 @@ comments: true
 
 HTML5는 각 태그에 의미와 구조적 특성을 부여하여, 웹 문서를 구조화시켰다.
 
->HTML5 IS A SEMANTIC WEB!
+>HTML5은 Semantic WEB을 지향한다.
 >
->SEMANTIC TAG: &#60;header&#62;, &#60;nav&#62;, &#60;section&#62;, &#60;article&#62;, &#60;aside&#62;, &#60;footer&#62; 
+>Semantic Tag: &#60;header&#62;, &#60;nav&#62;, &#60;section&#62;, &#60;article&#62;, &#60;aside&#62;, &#60;footer&#62; 
 >
->SEMANTIC TAG가 담긴 문서의 모양과 실제 구조와는 별개이다.
+>Semantic Tag가 담긴 문서의 모양과 실제 구조와는 별개이다.
 
 ## &#60;header&#62;
 
@@ -163,6 +163,21 @@ SEMANTIC INLINE TAG는 기능적인면도 조금은 있지만, 일반적으로 �
 
 웹 페이지를 통해 사용자의 입력을 받는 형태를 웹 폼(Webform)이라 한다.
 웹 폼을 구성하는 태그들을 특별히, Form element라고 부르며, &#60;input&#62;, &#60;textarea&#62;, &#60;select&#62;가 이에 해당한다.
+
+>텍스트 입력: &#60;textarea&#62;
+>
+>데이터 리스트: &#60;datalist&#62;
+>
+>체크 박스: &#60;checkbox&#62;
+>
+>라디오 버튼&#60;radio&#62;
+>
+>콤보 박스: &#60;select&#62;
+>
+>컬러 다이얼로그: &#60;color&#62;
+>
+>날짜 & 시간: &#60;date&#62;, &#60;time&#62;
+
 
 ```html
 <form action="WEB SERVER APPLICATION URL"
@@ -338,7 +353,7 @@ food: <input type="text" list="foods"><br>
 <pre>
 month: <input type="month" value="2017-10"><br>
 week: <input type="week" value="20170-W39"><br>
-data: <input type="data" value="2017-10-17"><br>
+date: <input type="date" value="2017-10-17"><br>
 time: <input type="time" value="10:15"><br>
 local: <input type="datetime-local" value="2017-10-1T10:15.10"><br>
 </pre>

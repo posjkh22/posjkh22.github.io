@@ -1,0 +1,179 @@
+---
+layout: post
+title: "HTML5"
+subtitle: "HTML5는 무엇이 다른가?"
+categories: language
+tags: html
+comments: true
+---
+
+## CSS(Cascading Style Sheet)
+
+CSS는 HTML 문서의 배경색, 모양, 출력 위치 등 외관을 꾸미는 언어이고, CSS로 작성된 코드를 Style Sheet 라 한다.
+Style Sheet는 Seletor, Property, Value 로 구성되어 있으며, Selector는 Sytle sheet가 적용되는 Style sheet의 이름, Property는 CSS 문법으로 내장되어 있는 속성, Value는 해당 속성에 대한 값을 의미한다.
+
+## CSS 우선순위
+
+CSS의 우선순위는 아래와 같으며 A에서 D로 갈 수록 우선순위가 높다. 즉, D가 A를 Style Overiding 한다.
+
+>A. 브라우저 디폴트 스타일
+>
+>B. 외부에서 불러오는 CSS 파일
+>
+>C. 헤더내의 &#60;style&#62;에서 지정한 속성
+>
+>D. HTML Tag에서 직접 지정한 속성
+
+
+## 내부 CSS 정의와 외부 CSS 불러오기
+
+>A. Internal CSS definition
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<titile>CSS USAGE</title>
+<style>
+body {
+	background-color: skyblue; color: white;
+	margin-left : 30px; margin-right : 30px; 
+}
+
+hs { 
+	text-align : center;
+	color : black;
+}
+</style>
+</head>
+<body>
+<h3> How to use CSS ? </h3>
+<hr>
+<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation
+ of a document written in a markup language. Although most often used to set the visual style
+ of web pages and user interfaces written in HTML and XHTML, the language can be applied to any
+ XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on
+ other media.</p>
+</body>
+</html>
+```
+
+>B. External CSS Definition
+
+&#60;link&#62;를 통해서 외부에서 정의된 CSS 파일을 import 할 수 있다.
+또한, &#60;style&#62; 내에서 &#64;import 을 이용하여 CSS 파일을 import 할 수도 있다.
+
+
+
+>style-A.css 
+
+```css
+body {
+	background-color: skyblue; color: white;
+	margin-left : 30px; margin-right : 30px; 
+}
+
+hs { 
+	text-align : center;
+	color : black;
+}
+```
+
+>web.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<titile>CSS USAGE</title>
+	<link type="text/css" rel="styleseet" href="style-A.css">
+</head>
+<body>
+<h3> How to use CSS ? </h3>
+<hr>
+<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation
+ of a document written in a markup language. Although most often used to set the visual style
+ of web pages and user interfaces written in HTML and XHTML, the language can be applied to any
+ XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on
+ other media.</p>
+</body>
+</html>
+```
+
+>web.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<titile>CSS USAGE</title>
+<style>
+	@import url(style-A.css);
+</style>
+</head>
+<body>
+<h3> How to use CSS ? </h3>
+<hr>
+<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation
+ of a document written in a markup language. Although most often used to set the visual style
+ of web pages and user interfaces written in HTML and XHTML, the language can be applied to any
+ XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on
+ other media.</p>
+</body>
+</html>
+```
+
+## 셀렉터
+
+Selector는 Tag name selector, Class selector, ID selector으로 나뉜다.
+즉, CSS의 효과를 입혀주는 대상을 Tag 전체로 할 것인지, Tag 내에 정의된 특정 Class로 할 것인지, 
+아니면 하나의 단일 대상(ID)를 선택할 것인지를 결정한다. Tag name selector는 Tag name을 그대로, 
+Class selector는 클래스 이름에 "."을, ID selector는 해당 ID에 #을 붙인다.
+
+>A. Tag name Selector
+
+>B. Class Selector
+
+
+```html
+<head>
+<style>
+	.warning { color: black; }
+	body.main { background : aliceblue; }	
+</style>
+</head>
+<body class="main">
+	<ul>
+		<li>TAXI
+		<li>BUS
+		<li>AIRPLANE
+	</ul>
+	<div class="message">Select!</div>	
+</body>
+```
+
+>C. ID Selector
+
+```html
+<head>
+<style>
+	.warning { color: black; }
+	body.main { background : aliceblue; }	
+	#list { background : mistyrose; }
+</style>
+</head>
+<body class="main">
+	<ul id="list">
+		<li>TAXI
+		<li>BUS
+		<li>AIRPLANE
+	</ul>
+	<div class="message">Select!</div>	
+</body>
+```
+
+
+&#60;&#62;
+&#60;&#62;
+&#60;&#62;
+
