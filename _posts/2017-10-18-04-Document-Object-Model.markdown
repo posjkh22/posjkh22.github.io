@@ -86,3 +86,47 @@ CSS와 마찬가지로, 자바스크립트 또한 웹 페이지 로딩단계에�
 </html>
 ```
 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS style with Javascript</title>
+<script>
+function change(){
+	var span = document.getElementById("s1");
+	span.style.color = "red";
+	span.style.fontSize = "30px";
+	span.style.display = "block";
+	span.style.width = "10em";
+}
+</script>
+</head>
+<body>
+<h3>CSS style configuration with Javascript</h3>
+<hr>
+<p style="color: blue"> Hello <span id="s1" style="color:blue">World!</span>
+<input type="button" value="click here" onclick="change()">
+</body>
+</html>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
