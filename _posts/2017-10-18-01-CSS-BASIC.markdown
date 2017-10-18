@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "HTML5"
-subtitle: "HTML5는 무엇이 다른가?"
+title: "CSS"
+subtitle: "CSS는 어떻게 쓰이는가?"
 categories: language
 tags: html
 comments: true
@@ -172,8 +172,302 @@ Class selector는 클래스 이름에 "."을, ID selector는 해당 ID에 #을 �
 </body>
 ```
 
+## Universal selector
 
-&#60;&#62;
-&#60;&#62;
-&#60;&#62;
+와일드카드(&#42;)를 사용하면 모든 웹페이지의 Tag에 적용된다.
+
+```html
+* { color : red; }
+```
+
+
+## Attribute selector
+
+Tag가 가진 특정 속성에 대한 값이 일치할 경우에만 Style이 적용된다.
+
+```html
+input[type=text] {color : blue; }
+```
+
+## Pseudo-class selector
+
+특정 상황이 발생하였을 때만 Style이 적용된다.
+
+>:hover - 마우스가 올라갈 때
+>
+>:active - 마우스가 누르고 있을 때
+>
+>:focus - 키보드나 마우스로 포커스를 받고 있을 때
+>
+>:link - 방문하지 않은 링크에 적용
+>
+>:visited - 방문한 링크에 적용
+>
+>:first-letter - 블록형 태그(&#60;p&#62;, &#60;div&#62;) 첫 글자에 스타일 적용
+>
+>:first-line - 블록형 태그의 첫 라인에 스타일 적용
+>
+>:nth-child(even) - 짝수번째 자식 태그에 스타일 적용
+>
+>:nth-child(1) - 첫번째 자식 태그에 스타일 적용
+
+```html
+a:visited { color : red; }
+li:hover { background : aliceblue; }
+```
+
+## 텍스트 꾸미기
+
+텍스트 꾸미기와 관련된 속성[attribute] 및 그에 해당하는 값(value)를 나열하면 아래와 같다.
+
+>[text-indent]: (length) / (percentage)
+>
+>[text-align]: (left) / (right) / (center) / (justify) 
+>
+>[text-decoration]: (none) / (underline) / overline / (line-throuth)
+
+## CSS3 표준단위
+
+>em : font-size 의 정수 배
+>
+>% : font-sizedml 퍼센트 배 
+>
+>px : 픽셀 수
+>
+>cm : 센티미터
+>
+>mm : 밀리미터
+>
+>in : 인치(96px)
+>
+>pt : 포인터(1pt = 1/74in)
+>
+>pc : 피카소(1pc = 12pt)
+>
+>deg : 시계방향으로 각도
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>TEXT DECORATION</title>
+<style>
+h3{
+	text-align : right;			
+}
+
+span, strong {
+	text-decoration : underline;
+}
+
+.class1 {
+	text-indent : 3em;
+	text-align : justify;
+}
+
+.class2 {
+	text-indent: 1em;
+	text-aling : center;
+}
+</style>
+</head>
+<body>
+<h3>Girl group TWICE to drop 1st full-length album this month</h3>
+<hr>
+<p class="class1">SEOUL, Oct. 16 (Yonhap) —<strong>K-op girl group TWICE</strong> will release its <span>first full-length album</span> this month, its agency said Monday</p>
+<p class="class2">The record, titled Twiceagram, will be released on Oct. 30, JYP Entertainment said. The lead song of the album is named Likey, according to the company. Further details werent provided.</p>
+</body>
+</html>
+```
+
+## 폰트 꾸미기
+
+폰트는 Serif, Sans-Serif, Monospace 등 3가지로 구분할 수 있는데, 글자에 삐침이 있는 Serif, 삐침이 없는 Sans-Serif, 글자의 폭이 동일한 Monospace 이다.
+폰트의 대표적인 속성(property)으로 font-family, font-size, font-style, font-weight 가 있다.
+
+## Font family
+
+폰트 패밀리는 글자에 적용되는 구체적인 폰트를 지정한다. 아래의 예는 우선적으로 Arial을 사용하도록하고, 브라우저에서 지원되지 않는 경우 
+Times New Roman을, 이 또한 지원되지 않을 경우 Sans-Serif 중에서 비슷한 것을 사용하도록 지정 하는 예이다.
+
+>font-family : Arial, "Times New Roman", Sans-Serif:
+
+## Font size
+
+px 같은 단위를 사용하는 경우 모든 브라우저에서 동일한 크기이고, medium 같은 value는 브라우저에 따라 달라진다. em은 현재 적용되어 있는 폰트 사이즈에 대한 배수 크기를 의미한다.
+바람직한 폰트 크기는 em을 사용하는 것이다. 개발자가 글자 크기를 px로 고정시킨다 하더라도, 사용자가 브라우저 메뉴에서 문서 전체 크기를 변경하면 글자는 개발자가 지정한 절대 크기로 출력되지 않기 때문이다.
+
+>font-size : 40px;
+>
+>font-size : medium;
+>
+>font-size : 1.6em;
+
+## Font style
+
+폰트 스타일은 일반적인 스타일인 normal, 필기체인 italic, 약간 기울인 oblique 스타일이 존재하는데, 실제적으로는 많은 폰트에서 italic와 oblique가 동일한 경우가 많다.
+
+>font-style : italic;
+>
+>font-style : normal;
+
+## Font weight
+
+font-wegiht는 글자의 굵기를 나타내며 100~900 사이의 숫자이다. 정확한 수치가 필요치 않는 경우에는 그냥 normal(400), bold(700), bolder, lighter을 지정해 사용하면 된다.
+
+>font-weight : 300;
+>
+>font-weight : bold;
+
+## 폰트 표현
+
+폰트는 위에서 설명한 것처름 각 property에 따라 value를 적용하므로 설정해줄 수도 있지만 편의를 위해 지정된 순차에 따라 value만을 기입하여 표현할 수 도 있다.
+이 경우, font-size와 font-fammily는 반드시 지정되어야 한다.
+
+>font : font-style, font-weight, font-size, font-fammily
+>
+>font : italic bold 20px Arial, "Times New Roman", sans-serif;
+>
+>font : 20px, Arial, "Time New Roman", sans-serif;
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>FONT</title>
+<style>
+h3 {
+	font : italic bold 50px Arial, sans-serif;
+}
+
+.p1 {
+	font-fammily : "Times New Roman", Serif;
+	font-size : 10px;
+	font-weight : bold;
+}
+.p2 {
+	font : 10px consolas, Serif;
+}
+</style>
+</head>
+<body>
+<h3>S. Korea, U.S start maritime drills against N.Korea</h3>
+<hr>
+<p class="p1">SEOUL. Oct. 16 (Yonhap) — The Sout Korean and U.S. navis on 
+Monday kicked off massive combined drills off the coast of the peninsula 
+amid heightened tensions.</p>
+
+<p class="p2">The allies plan to continue the Maritime Counter Special 
+Operations Exercise (MCSOFEX) through Friday in the East Sea and the 
+Yellow Sea, also known as the West Sea.</p>
+
+<p style="font-size:10; font-fammily:Arial, sans-serif">It involves the 
+U.S. 7th Fleets aircraft carrier USS Ronald Reagan (CVN-76) and two Arleigh 
+Burke-class destroyers — the US Stethem (DDG-63) and the US Mustin (DDG-89).</p>
+</body>
+</html>
+```
+
+## BOX MODEL
+
+CSS에서는 HTML Tag 들을 contents(내용), padding, border, margin 의 속성을 지니고 있는 하나의 BOX로 생각한다.
+
+>CONTENTS: TEXT 또는 IMAGE
+>
+>PADDING: CONTENTS를 둘러싸고 있는 BOX의 내부 여백
+>
+>BORDER: BOX의 두께
+>
+>MARGIN: BOX의 외부 여백
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>BOX</title>
+<style>
+body {
+	background : blue;
+}
+div.box {
+	gackground : aliceblue;
+	border-style : solid;
+	border-color : brown;
+	margin : 40px;
+	boarder-width : 10px;
+	padding : 10px;
+}
+</style>
+</head>
+<body>
+	<div class="box">
+		Hello World!
+	</div>
+</body>
+</html>
+```
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rounded Corner</title>
+<style>
+p {
+	background : aliceblue;
+	width : 400px;
+	padding : 10px;
+}
+
+#round1 { border-radius: 30px; }
+#round2 { border-radius: 30px 10px 30px 10px; }
+#round3 { border-radius: 15px 15px 15px 15px; }
+</style>
+</head>
+<body>
+<h3> ROUND-SHAPED BOX </h3?
+<hr>
+<p id="round1">CSS has a simple syntax</p>
+<p id="round2">CSS has a simple syntax</p>
+<p id="round3">CSS has a simple syntax</p>
+</body>
+</html>
+```
+
+## 배경
+
+배경은 보통 색으로 칠하거나 이미지를 넣는다. 이 때 배경에 대해 색과 이미지를 둘 다 넣는 경우, CSS는 배경색을 먼저 칠하고 이미지를 불러오므로
+이미지가 배경이 된다. Background의 property로는 background-position, background-size, background-repeat 이 있고, 편의를 위해 background shorthand property도 있다.
+
+```html
+div {
+	background-color : skyblue;
+	background-image : url("space_star.png");
+}
+```
+
+>background-position : center center;
+>
+>background-size : 100px 100px;
+>
+>background-repeat : repeat-y;
+>
+
+```html
+div {
+	background : aliceblue url("spce_star.png") center center / 100px 100px repeat-x;
+}
+```
+
+## 마우스 커서
+
+cursor CSS property를 사용하면, HTML 태그 위에 표시되는 마우스의 모양을 결정할 수 있다.
+
+>cursor: pointer;
+>
+>cursor: move;
+>
+>cursor: zoom-in;
+>
+>cursor: progress;
 
