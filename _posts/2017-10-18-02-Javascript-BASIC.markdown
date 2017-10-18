@@ -95,6 +95,7 @@ function out(obj){
 a {
 	text-align: center;
 }
+</style>
 </head>
 <body>
 <h3>Alert(POP UP)</h3?
