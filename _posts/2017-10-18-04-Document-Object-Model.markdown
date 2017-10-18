@@ -109,13 +109,34 @@ function change(){
 </body>
 </html>
 ```
+>## This
 
+this는 객체 자신을 가리키는 자바스크립트 키워드이다.
+DOM 객체 자신을 가리키는 용도로 사용될 수 있다.
 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>THIS</title>
+<script>
+function change(obj, size, color){
+	obj.style.color = color;
+	obj.style.fontSize = size;
+}
+</script>
+</head>
+<body>
+<h3> THIS </h3>
+<hr>
+<button onclick="change(this, '30px', 'darkred')">button1</button>
+<button onclick="change(this, '30px', 'aliceblue')">button2</button>
+<button onclick="change(this, '30px', 'darkgrey')">button3</button>
 
-
-
-
-
+<div onclick="change(this, '30px', 'red')">Click</div>
+</body>
+</html>
+```
 
 
 
