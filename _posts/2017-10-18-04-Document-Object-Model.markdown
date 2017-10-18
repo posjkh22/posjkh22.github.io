@@ -67,23 +67,22 @@ CSS와 마찬가지로, 자바스크립트 또한 웹 페이지 로딩단계에�
    style="color: darkred; text-align: center; text-weight: bold;"
    onclick="this.style.color='aliceblue'">Click Here</p>
 <script>
-	var obj = document.getElementById("identification");
-	var id = obj.id;
-	var color = obj.style.color;
-	var text-align = obj.style.text-align;
-	var text-weight = obj.style.text-weight;
-	var message = obj.innerHTML;
+	var obj_p = document.getElementById("identification");
+	var id = obj_.id;
+	var color = obj_p.style.color;
+	var text-align = obj_p.style.text-align;
+	var text-weight = obj_p.style.text-weight;
+	var message = obj_p.innerHTML;
 
-	document.writeln(id);
-	document.writeln(color);
-	document.writeln(text-align);
-	document.writeln(text-weight);
-	document.writeln(message);
+	document.write("id: " + id + "<br>");
+	document.write("color: " + color + "<br>");
+	document.write("text-align: " + text-align + "<br>");
+	document.write("text-weight: " + text-wegiht + "<br>");
+	document.write("message: " + message + "<br>");
 	
 	alert(id);
 </script>   	
 </body>
 </html>
-
 ```
 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML DOM</title>
+</head>
+<body>
+<h3>How to create WEB</h3>
+<hr>
+<p id="identification"
+   style="color: darkred; text-align: center; text-weight: bold;"
+   onclick="this.style.color='aliceblue'">Click Here</p>
+<script>
+	var obj = document.getElementById("identification");
+	var id = obj.id;
+	var color = obj.style.color;
+	var text-align = obj.style.text-align;
+	var text-weight = obj.style.text-weight;
+	var message = obj.innerHTML;
+
+	document.writeln(id);
+	document.writeln(color);
+	document.writeln(text-align);
+	document.writeln(text-weight);
+	document.writeln(message);
+	
+	alert(id);
+</script>   	
+</body>
+</html>
