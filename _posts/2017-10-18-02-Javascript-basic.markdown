@@ -232,6 +232,8 @@ C언어와 동일하게 연산자 &&(and), ||(or), !(not)이 적용된다.
 <titile>Conditional Statements</title>
 </head>
 <body>
+<h3>Score selector</h3>
+<hr>
 <script>
 	var grade;
 	var score = prompt("ENTER your scores, 100);
@@ -262,6 +264,12 @@ switch-case, for, while, do-while, break, continue 등 모두 c언어의 용법�
 ## 함수
 
 Javascript에서 기본으로 제공하는 대표적인 함수에는 eval(), parseInt(), isNaN() 이 있다.
+
+>eval(): 문자열 연산을 수행, 결과값(숫자)를 반환
+>
+>parseInt(): 문자열로 표현된 숫자를 입력받아 숫자를 반환
+>
+>isNaN(): 입력된 변수가 숫자인자 판단. 아니면 false, 맞으면 true 를 반환
 
 ```html
 
