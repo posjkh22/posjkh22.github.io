@@ -177,6 +177,82 @@ f();
 </html>
 ```
 
+## 문자열과 변수연산
+
+Javascript 변수의 연산에 조금 유의할 것은 bool 변수 true, false가 있다는 점이다. 이때 대소문자를 유의해야 한다. 
+이 bool 변수는 출력시 문자열로 true, false가 반환되며, 비교연산의 결과로써 반환되기도 한다. 또한 이 변수는 논리연산도 가능한데,
+C언어와 동일하게 연산자 &&(and), ||(or), !(not)이 적용된다.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>literal</title>
+</head>
+<body>
+<h3>LITERAL IN LITERAL</h3>
+<hr>
+<script>
+	var hex = 0x11;
+	var condition = true;
+	var x = 5;
+	var y = 7;
+	var z = 3;	
+	var result = (x + y * z)/2;
+	document.write("hex number: " + hex + "<br>");
+	document.write("condition: " + condition + "<br>");
+	document.write('Single quotes' + "<br>");
+	document.write("\"Is any body here?\" I said" + "<br>");
+	document.write("Calculation result: " + result + "<br>");
+</script>
+</body>
+</html>
+```
+
+## 비트 쉬프트 연산
+
+>&#60;&#60;, &#62;&#62; 산술 쉬프트 연산(부호 유지)
+>
+>&#60;&#60;&#60;;, &#62;&#62;&#62; 논리 쉬프트 연산(부호 유지x)
+
+## 문자열 연산
+
+>"abc" + "ddc" : "abcddc"
+>
+>12 + 31 + "bbq" : "43bbq"
+>
+>"abc" < "bbq" : true
+
+## 조건문
+
+```html
+<!DOCTYPE html>
+<html
+<head>
+<titile>Conditional Statements</title>
+</head>
+<body>
+<script>
+	var grade;
+	var score = prompt("ENTER your scores, 100);
+	score = parseInt(score);
+	if(score >= 90)
+		grade = "A";
+	else if(score >= 80)
+		grade = "B";
+	else if(score >= 70)
+		grade = "C";
+	else if(score >= 60)
+		grade = "D";
+	else
+		grade = "F";
+	document.write(score + "is " + grade "<br>");
+</scirpt>
+</body>
+</html>
+```
+
+
 &#60;&#62;
 &#60;&#62;
 
