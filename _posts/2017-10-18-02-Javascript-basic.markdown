@@ -109,5 +109,92 @@ a {
 </html>
 ```
 
+>E. Description in &#60;body &#62;
+
+```html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>docuemnt.write()</title>
+</head>
+<body>
+<h3>document.write()</h3>
+<hr>
+<script>
+	document.write("Hello world!\n");
+	document.write("This is written by document.write()\n");
+</script>
+</body>
+</html>
+```
+
+## 자바스크립트 변수
+
+>var score; score = 98;
+>var season = "winter";
+>var year = 2017;
+>var real = 7.97;
+
+## 지역변수와 전역변수
+
+지역변수는 함수내에서 선언되는 변수이고, 전역변수는 함수 밖에서 선언되는 변수이다.
+그 특성은 C언어의 변수와 동일하게 전역변수는 &#60;script&#60; 전역에서, 지역변수는 선언되는 함수 내에서 사용가능하다.
+
+## this와 변수
+
+함수내의 지역변수와 전역변수의 이름이 같을 때, 함수내에서 전역변수를 사용하고자 하면 어떻게 해야할까? this를 이용해 접근 가능하다.
+
+```js
+var x;
+function f(){
+	var x;
+	x = 1;
+	this.x = 100;
+}
+```
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript variables</title>
+</head>
+<body>
+<h3>Javascript variables</h3>
+<hr>
+<script>
+var x = 100;
+function f() {
+	var x = 10;
+	document.write("local x = " + x + "\n");
+	document.write("global x = " + this.x + "\n");
+}
+
+f();
+</script>
+</body>
+</html>
+```
+
+&#60;&#62;
+&#60;&#62;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
