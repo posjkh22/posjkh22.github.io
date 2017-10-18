@@ -70,4 +70,71 @@ Datae는 시간과 관련된 정보를 담는 객체이다.
 
 ## String
 
+Javascpript 문자열을 코어객체(String)을 사용하여 생성할 수 있다.
+이 때, String 객체는 일단 생성되면 문자열 수정이 불가능하다.
+
+>var msg = new String("Hello world!");
+
+## String Method
+
+String 메서드는 가지고 있는 사용되는 객체 레퍼런스의 값이 변하는 것이 아니라, 새로 레퍼런스를 생성하여 반환하는 것이다.
+다시 말하면, var msg2 = msg.concat("Nice to see you!"); 을 실행하여도 msg이 가지는 문자열의 값은 변하지 않는다.
+
+>concat, indexOf, replace, slice, split, toUpperCase, toLowerCase();
+
+
+## Math
+
+Math 객체는 수학 계산을 위해 메소드를 제공하는데, 다른 코어 객체와는 조금 다르게 레퍼런스 변수를 생성하지 않고
+바로 객체에 대한 메서드를 사용한다. 즉, 객체에 대한 레퍼런스는 만들지 않는다. (new 키워드를 사용하지 않는다.)
+
+>var root = Math.sqrt(4);
+> 
+>var area = Math.PI * 2 * 5;
+>
+>var random = Math.random();
+>
+>var floor = Math.floor(3.14159265);
+
+## Math Method
+
+>abs(x), sin(x), exp(x), pow(x,y), random(), floor(x), round(x), sqrt(x), E(Eular constant), PI 
+
+
+## 프로토타입
+
+자바스크립트에서 제공하는 코어 객체 이외에 프로그래머가 직접 만들어 사용하는 객체를 프로토타입(prototype)이라고 부른다.
+프로토타입은 new Object()를 통해 생성할 수 있고. 이 때 생성되는 객체는 변수(property)와 함수(Method) 없이 비어 있는 객체이다.
+
+```js
+var food = new Object();
+food.name = "pizza";
+food.price = 10;
+food.volume = 3;
+
+function evaluation(){
+	return this.volume * this.price;
+}
+``` 
+>var pizza_evaluation = food.evaluation();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
