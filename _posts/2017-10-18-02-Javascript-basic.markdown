@@ -167,8 +167,8 @@ function f(){
 var x = 100;
 function f() {
 	var x = 10;
-	document.write("local x = " + x + "\n");
-	document.write("global x = " + this.x + "\n");
+	document.write("local x = " + x + "<br>");
+	document.write("global x = " + this.x + "<br>");
 }
 
 f();
