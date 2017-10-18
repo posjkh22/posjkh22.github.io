@@ -276,11 +276,24 @@ Javascript에서 기본으로 제공하는 대표적인 함수에는 eval(), par
 <html>
 <head>
 <title>Built-in function</title>
+<script>
+function example_function(){
+	var result1 = eval("2+4*3");
+	var result2 = parseInt("99");
+	if(result2){
+		document.write("parseInt does not work properly");
+	}
+	
+	document.write("result1: " + result1 +"<br>"); 
+	document.write("result12 " + result2 +"<br>"); 
+}
+</script>
 </head>
 <body
 <h3>Built-in function Test</h3>
 <hr>
 <script>
+	example_function();
 </script>
 </body>
 </html>
