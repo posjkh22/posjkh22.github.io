@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Conditional Statements</title>
+</head>
+<body>
+<h3>Score selector</h3>
+<hr>
+<script>
+	var grade;
+	var score = prompt("ENTER your scores, 100);
+	score = parseInt(score);
+	if(score >= 90)
+		grade = "A";
+	else if(score >= 80)
+		grade = "B";
+	else if(score >= 70)
+		grade = "C";
+	else if(score >= 60)
+		grade = "D";
+	else
+		grade = "F";
+	document.write(score + "is " + grade "<br>");
+</script>
+</body>
+</html>

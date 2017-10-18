@@ -289,7 +289,7 @@ function example_function(){
 }
 </script>
 </head>
-<body
+<body>
 <h3>Built-in function Test</h3>
 <hr>
 <script>
