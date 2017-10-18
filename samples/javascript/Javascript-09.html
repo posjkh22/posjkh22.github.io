@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Conditional Statements</title>
+<title>Built-in function</title>
+<script>
+function example_function(){
+	var result1 = eval("2+4*3");
+	var result2 = parseInt("99");
+	if(result2){
+		document.write("parseInt does not work properly");
+	}
+	
+	document.write("result1: " + result1 +"<br>"); 
+	document.write("result12 " + result2 +"<br>"); 
+}
+</script>
 </head>
 <body>
-<h3>Score selector</h3>
+<h3>Built-in function Test</h3>
 <hr>
 <script>
-	var grade;
-	var score = prompt("ENTER your scores, 100);
-	score = parseInt(score);
-	if(score >= 90)
-		grade = "A";
-	else if(score >= 80)
-		grade = "B";
-	else if(score >= 70)
-		grade = "C";
-	else if(score >= 60)
-		grade = "D";
-	else
-		grade = "F";
-	document.write(score + "is " + grade "<br>");
+	example_function();
 </script>
 </body>
 </html>

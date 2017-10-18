@@ -280,8 +280,8 @@ Javascript에서 기본으로 제공하는 대표적인 함수에는 eval(), par
 function example_function(){
 	var result1 = eval("2+4*3");
 	var result2 = parseInt("99");
-	if(result2){
-		document.write("parseInt does not work properly");
+	if(result2 != true){
+		document.write("parseInt does not work properly" + "<br>" );
 	}
 	
 	document.write("result1: " + result1 +"<br>"); 
@@ -299,10 +299,6 @@ function example_function(){
 </html>
 
 ```
-
-
-&#60;&#62;
-&#60;&#62;
 
 
 
