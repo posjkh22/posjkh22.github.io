@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>onmouse</title>
+<script>
+function over(obj){
+	obj.src="winter.png";
+}
+function out(obj){
+	obj.src="summer.png";
+}
+</script>
+</head>
+<body>
+<h3>Drag your mouse over the image</h3>
+<hr>
+<img src="summer.png" alt="summer"
+	onmouseover="over(this)"
+	onmouseout="out(this)">
+</body>
+</html>
