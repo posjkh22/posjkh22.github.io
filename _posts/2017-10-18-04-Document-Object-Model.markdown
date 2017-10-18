@@ -138,8 +138,76 @@ function change(obj, size, color){
 </html>
 ```
 
+## document 객체
+
+document는 DOM TREE의 최상위 객체이다.
+브라우저는 HTML 문서를 로드하기 전에 document 객체를 먼저 만든다. 그리고 이를 ROOT로 하여 DOM TREE를 만든다.
+document 객체는 잉름 그대로 HTML 문서 전체를 대변하는 객체이며, 모든 DOM 객체를 접근하는 경로의 시작점이다.
+여러 메소드를 통해 DOM 객체의 검색, 새로운 DOM 객체 생성 등 HTML 문서의 전반적인 제어를 지원한다. 
+또한 HTML 문서에 만들어진 동일한 이름의 HTML 태그들을 배열처럼 접근할 수 있는 컬렉션을 두고 있다.
+
+>document 객체는 DOM 객체가 아니다. 연결된 CSS도 없고, style property도 없다.
+>
+>document 객체는 많은 property를 문서의 전반적인 속성을 나타내고 및 많은 method를 통해 문서를 제어한다.
 
 
+## document property
+
+>location, domain, referrer, cookie, lastModified, readyState, title, body, head, defaultView, activeElement, documentElement, URL
+
+## document collection
+
+> images, links, forms
+
+## document method
+
+>getElementsByTagName(), getElementsByClassName(), getElementsByName(), getElementById()
+>
+>addEventListener(), close(), createElement(), open(),,, removeEventListener(), write(), writeln()
+
+```js
+var newDIV = document.createElement("div");
+newDIV.innerHTML = "This is New DIV";
+newDIV.setAttribute("id", "newDiv");
+newDIV.style.backgroundColor = "yellow";
+```
+
+```html
+<div id = "newDiv"
+     style = "background-color: yellow">
+     This is New DIV
+</div>
+
+```
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM TREE configuration</title>
+<script>
+function createDIV(){
+	var obj = document.getElementById("p");
+	var newDIV = document.createElement("div");
+	newDIV.innerHTML = "New created DIV";
+	newDIV.setAttribute("id", "newDIV");
+	newDIV.style.backgroundColor = "aliceblue";
+	newDIV.addEventListener("click",
+		functionm(){
+			var p = this.parentElement;
+			p.removeChild(this);
+		});
+	obj.appendChild(newDIV);
+}
+</script>
+</head>
+<body id="p">
+<h3>DIV creation, insertion, deletion</h3>
+<hr>
+<a href="javascript:createDIV()")>DIV CREATION</a>
+</body>
+</html>
+```
 
 
 

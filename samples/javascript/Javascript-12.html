@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>THIS</title>
+<script>
+function change(obj, size, color){
+	obj.style.color = color;
+	obj.style.fontSize = size;
+}
+</script>
+</head>
+<body>
+<h3> THIS </h3>
+<hr>
+<button onclick="change(this, '30px', 'darkred')">button1</button>
+<button onclick="change(this, '30px', 'aliceblue')">button2</button>
+<button onclick="change(this, '30px', 'darkgrey')">button3</button>
+
+<div onclick="change(this, '30px', 'red')">Click</div>
+</body>
+</html>
