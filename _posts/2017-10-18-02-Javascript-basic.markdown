@@ -227,7 +227,7 @@ C언어와 동일하게 연산자 &&(and), ||(or), !(not)이 적용된다.
 
 ```html
 <!DOCTYPE html>
-<html
+<html>
 <head>
 <titile>Conditional Statements</title>
 </head>
