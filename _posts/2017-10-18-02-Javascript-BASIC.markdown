@@ -7,6 +7,8 @@ tags: html
 comments: true
 ---
 
+>How to descript Javascript for HTML?
+
 **How to describe Javascript for HTML ?
 
 ## How to describe Javascript for HTML
