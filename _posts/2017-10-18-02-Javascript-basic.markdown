@@ -247,9 +247,25 @@ C언어와 동일하게 연산자 &&(and), ||(or), !(not)이 적용된다.
 	else
 		grade = "F";
 	document.write(score + "is " + grade "<br>");
-</scirpt>
+</script>
 </body>
 </html>
+```
+
+## 여러 조건문
+
+if 문을 보면 c언어 문법과 완벽하게 동일하다는 것을 알 수 있다. 이는 if 이외의 조건문도 마찬가지이다.
+switch-case, for, while, do-while, break, continue 등 모두 c언어의 용법과 동일하다.
+단, case 문의 경우에는 c언어와 조금 다르게 비교되는 입력변수가 문자열이어도 상관 없다.
+
+
+## 함수
+
+Javascript에서 기본으로 제공하는 대표적인 함수에는 eval(), parseInt(), isNaN() 이 있다.
+
+```html
+
+
 ```
 
 
