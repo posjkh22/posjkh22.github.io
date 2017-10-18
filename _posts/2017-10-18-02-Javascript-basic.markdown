@@ -229,7 +229,7 @@ C언어와 동일하게 연산자 &&(and), ||(or), !(not)이 적용된다.
 <!DOCTYPE html>
 <html>
 <head>
-<titile>Conditional Statements</title>
+<title>Conditional Statements</title>
 </head>
 <body>
 <h3>Score selector</h3>
@@ -272,7 +272,18 @@ Javascript에서 기본으로 제공하는 대표적인 함수에는 eval(), par
 >isNaN(): 입력된 변수가 숫자인자 판단. 아니면 false, 맞으면 true 를 반환
 
 ```html
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Built-in function</title>
+</head>
+<body
+<h3>Built-in function Test</h3>
+<hr>
+<script>
+</script>
+</body>
+</html>
 
 ```
 
