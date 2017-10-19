@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM TREE configuration</title>
+<script>
+function createDIV(){
+	var obj = document.getElementById("p");
+	var newDIV = document.createElement("div");
+	newDIV.innerHTML = "New created DIV";
+	newDIV.setAttribute("id", "newDIV");
+	newDIV.style.backgroundColor = "aliceblue";
+	newDIV.addEventListener("click",
+		functionm(){
+			var p = this.parentElement;
+			p.removeChild(this);
+		});
+	obj.appendChild(newDIV);
+}
+</script>
+</head>
+<body id="p">
+<h3>DIV creation, insertion, deletion</h3>
+<hr>
+<a href="javascript:createDIV()">DIV CREATION</a>
+</body>
+</html>

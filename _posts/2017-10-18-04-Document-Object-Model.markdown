@@ -205,6 +205,7 @@ function createDIV(){
 <h3>DIV creation, insertion, deletion</h3>
 <hr>
 <a href="javascript:createDIV()">DIV CREATION</a>
+<p></p>
 </body>
 </html>
 ```
