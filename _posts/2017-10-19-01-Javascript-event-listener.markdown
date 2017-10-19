@@ -166,7 +166,7 @@ function init{
 
 >preventDefault(): 이벤트의 디폴트 행동을 취소시키는 method
 
-# 이벤트 객체 전달
+## 이벤트 객체 전달
 
 객체 property를 통해 event listener를 생성하는 경우, 따로 이벤트 객체를 입력으로 명시하지 않아도 암묵적으로 첫번째 입력변수로 들어간다. 
 따라서, 이벤트에 등록된 함수가 이벤트 객체에 대한 정보를 얻기 위해서는 첫번째 매개변수로 함수 선언에 명시를 해야한다. 이는 익명함수의 경우도 동일하다.
@@ -219,14 +219,113 @@ HTML tag 중에서는 event listener를 attribute로 주지 않더라도 event�
 예를들어, &#60;p&#62;, &#60;input&#62; 등이 있다. 이런 동작을 Default 동작라 부르고,
 default event가 발생하지 않도록 하는 것이 디폴트 동작 취소이다.
 
+```html
+
+<a href="https://posjkh22.github.io" onclick="return false">Prevent default</a>
+
+<input type=checkbox onclick="return false">
+
+<a href="https://posjkh22.github.io" onclick="event.preventDefault()">Prevent default</a>
+```
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event default action prevention</title>
+<script>
+function query(){
+	var ret = confirm("Move to the link?");
+	return ret;
+}
+function noAction(e){
+	e.preventDefault();
+}
+</script>
+</head>
+<body>
+<h3>Event default action prevention</h3>
+<hr>
+<a href="https://posjkh22.github.io"
+   onclick="return query()">
+   link to posjkh22.github.io</a>
+<hr>
+<form>
+	<input type="checkbox" onclick="noAction(event)">PIZZA<br>
+	<input type="checkbox">CHICKEN<br>
+</form>
+</body>
+</html>
+```
+
+## Event propagation
+
+발생한 이벤트는 window 객체로부터 DOM TREE를 타고 중간 DOM 객체들을 거쳐 타겟 객체로 흘러가고, 다시 반대로 방향으로 이동하여 window 객체에 도달한 후 없어진다.
+
+>A. Capturing phase
+
+window에서 타겟 객체까지 이벤트 객체가 전달되는 과정. window 객체와 타겟 객체 사이 모두 순차적으로 이벤트 객체가 전달된다. 이 사이의 객체 중 이벤트 리스너를 가지고 있는 경우, 이벤트는 실행된다. 
+여기서 언급되는 이벤트 리스너는 'Capture event listener'이다. 즉, Capture phase에서 동작하는 이벤트 리스너이다.
+
+>B. Bubbling phase
+
+타겟 객체에서 다시 window 객체로 전달되는 과정. 생소한 개념이지만 이 과저에서도 동작하는 이벤트 리스너가 있다. 이를 'Bubble listener'라고 한다.
+
+
+## Capture Listener & Bubble Listener
+
+하나의 DOM 객체는 캡처 리스너와 버블 리스너를 모두 가질 수 있으므로, 이벤트 리스너를 등록시 이를 명시하여 구분해야 한다.
+
+>addEventListener() 의 세번째 매개변수가 true이면 '캡쳐 리스너', false이면 '버블 리스너'로 등록된다.
+>
+>addEventListener() 이외의 방식으로 리스너를 등록하는 경우, 모두 '버블 리스너'로 등록 된다.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Propagation</title>
+</head>
+<body>
+<p style="color:red">Event
+<span style="color:blue" id="span">Propagation</span>
+</p>
+<hr>
+<form>
+	<input type="text" name="s">
+	<input type="button" value="Test" id="button">
+	<hr>
+</form> 
+<div id="div" sytle="color:green"></div>
+<script>
+var div = document.getElementById("div");
+var button = document.getElementById("button");
+
+document.body.addEventListener("click", capture, true);
+botton.addEventListener("click", bubble, false);
+document.body.addEventListener("click",bubble, false);
+
+function capture(e){
+	var obj = e.currentTarget;
+	var tagName = obj.tagName;
+	div.innerHTML += "<br>capture phase : " + tagName + " tag " + e.type + " event ";
+}
+
+function bubble(e){
+	var obj = e.currentTarget;
+	var tagName = obj.tagName;
+	div.innerHTML += "<br>bubble pahse : " + tagName + " tag " + e.type + " event ";
+}
+</script>
+</body>
+<html>
 
 
 
 
 
 
-
-
+```
 
 
 
