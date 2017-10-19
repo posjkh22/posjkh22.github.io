@@ -193,7 +193,7 @@ function createDIV(){
 	newDIV.setAttribute("id", "newDIV");
 	newDIV.style.backgroundColor = "aliceblue";
 	newDIV.addEventListener("click",
-		functionm(){
+		function(){
 			var p = this.parentElement;
 			p.removeChild(this);
 		});
