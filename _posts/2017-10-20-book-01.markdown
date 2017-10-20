@@ -11,6 +11,8 @@ comments: true
 
 ![](https://github.com/posjkh22/posjkh22.github.io/blob/master/_images/book/01.png)
 
+![](https://guides.github.com/activities/hello-world/branching.png)
+
 ```
 특정한 사람에 의한 역사, 특별한 사람들에 의한 기록
 ```
