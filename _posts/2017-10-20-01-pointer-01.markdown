@@ -163,10 +163,10 @@ int main(){
 	char_pointer++;
 	printf(" char pointer: %d\n", *char_pointer);
 
-	printf(" int pointer: %d\n", *int_pointer);
+	printf(" int pointer: %x\n", *int_pointer);
 
 	int_pointer++;
-	printf(" int pointer: %d\n", *int_pointer);
+	printf(" int pointer: %x\n", *int_pointer);
 
 }
 ```
@@ -195,10 +195,10 @@ int main(){
 	char_pointer = char_pointer + 1;
 	printf(" char pointer: %d\n", *char_pointer);
 
-	printf(" int pointer: %d\n", *int_pointer);
+	printf(" int pointer: %x\n", *int_pointer);
 
 	int_pointer = int_pointer + 1;
-	printf(" int pointer: %d\n", *int_pointer);
+	printf(" int pointer: %x\n", *int_pointer);
 
 }
 ```
@@ -225,9 +225,9 @@ int main(){
 
 	printf(" char pointer: %d\n", *char_pointer);
 
-	printf(" int pointer: %d\n", *int_pointer++);
+	printf(" int pointer: %x\n", *int_pointer++);
 
-	printf(" int pointer: %d\n", *int_pointer);
+	printf(" int pointer: %x\n", *int_pointer);
 
 }
 ```
